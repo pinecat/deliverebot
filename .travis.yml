@@ -6,6 +6,6 @@ cache:
 script:
     - npm install -g expo-cli
     - yarn install
-    - yarn start
+    - expo build:web
 on:
     branch master
