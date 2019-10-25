@@ -4,6 +4,7 @@ node_js:
 cache:
     ./node_modules
 script:
+    - npm install -g expo-cli
     - yarn install
     - yarn start
 on:
