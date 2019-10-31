@@ -1,15 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-
-import { AzureAD } from 'react-aad-msal';
-import { authProvider } from './authProvider';
+import AuthView from './AuthView'
 
 export default function App() {
   return (
         <View style={styles.container}>
-            <AzureAD provider={authProvider} forceLogin={true}>
-                <Text>Hello World!</Text>
-            </AzureAD>
+            <Text>Hello World!</Text>
+            <AuthView />
         </View>
     );
 }
