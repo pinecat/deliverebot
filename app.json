@@ -11,7 +11,7 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "https://www.etown.edu/offices/marketing-and-communications/guides/graphic-style-guide/files/blue-jay/centered.BlueJayWithEtown.jpg",
+    "icon": "./assets/bluejay.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
