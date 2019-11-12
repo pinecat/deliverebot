@@ -1171,10 +1171,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-azure-ad-graph-expo@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/azure-ad-graph-expo/-/azure-ad-graph-expo-1.1.0.tgz#fead6e9852452daf41b9f53aea1707fc08773808"
-  integrity sha512-ZSwmcOl0Cj19fKpKUJOHr0JyPHfs6s8W4z0hJQTym1ozHhhTv32V0MJEBMMnpl8SSbRaFxnOx7n61mdSa8Kknw==
+azure-ad-graph-expo@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/azure-ad-graph-expo/-/azure-ad-graph-expo-1.1.1.tgz#c572bc4071f6203933721a145f3485a210a594ea"
+  integrity sha512-4eeCqVezjgayUAr/N1ijmNIJeMoCjP2KLAyDYwnaWrTigfUA0S8xq0/HvJuV8cDaQvVcEW9P4vQVOat2+bp4cw==
   dependencies:
     expo "^35.0.1"
 
