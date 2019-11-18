@@ -269,6 +269,26 @@ export const MenuNavigator = createStackNavigator(
      GrilledChkn: Food.GrilledChkn,
      ChknStrips: Food.ChknStrips,
      BuffaloChknStrips: Food.BuffaloChknStrips,
+     /*Breakfast*/
+     EggJay: Food.EggJay,
+     FrenchToast: Food.FrenchToast,
+     HashBrown: Food.HashBrown,
+     Omelet: Food.Omelet,
+     /*Pizza*/
+     Personal: Food.Personal,
+     FlatBread: Food.FlatBread,
+     /*Quesadilla*/
+     ItalianChkn: Food.ItalianChkn,
+     CheeseQuesadilla: Food.CheeseQuesadilla,
+     ChknQuesadilla: Food.ChknQuesadilla,
+     CripsyChknQuesadilla: Food.CrispyChknQuesadilla,
+     BuffaloChknQuesadilla: Food.BuffaloChknQuesadilla,
+     FrenchBread: Food.FrenchBread,
+     /*Misc*/
+     GarlicCheeseBread: Food.GarlicCheeseBread,
+     CheesyRanch: Food.CheesyRanch,
+     CinnamonSticks: Food.CinnamonSticks,
+     BreadSticks: Food.BreadSticks,
   },
   {
 	   initialRouteName: 'Home',
