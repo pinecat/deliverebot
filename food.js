@@ -6,21 +6,17 @@ export class CustomFood extends React.Component{
     render(){
 	return(
 		<View style={[styles.container]}>
-      <Text style={[styles.headerText, {marginBottom: 20}]}>{this.props.food}</Text>
-      <View style={{width:'100%', height:'65%', backgroundColor: '#2889fc'}}>
-        <Image source={this.props.image} style={{height:'100%', width:'100%', justifyContent: 'center', alignItems: 'center'}}/>
-      </View>
-      <Text style={{fontSize: 20, color: 'white', flex: 1, alignItems: 'center', marginLeft: '10%', marginRight: '10%'}}>
+      <Text style={[styles.headerText, {marginBottom: 50}]}>{this.props.food}</Text>
+      <Image resizeMode="contain" source={this.props.image} style={{flex: 1, height:'70%', width:'100%', justifyContent: 'flex-start'}}/>
+      <Text style={{fontSize: 20, color: 'white', flex: 1, alignItems: 'center', marginTop: '10%', marginLeft: '10%', marginRight: '10%'}}>
         {this.props.description}
       </Text>
       <Button title="Add to cart" style={[styles.button]} onPress={()=>alert('Added to cart')}/>
-		</View>
+	  </View>
 	);
-}vertical
+  }
 }
-() => {
-/*Hot Sandwiches*/
-}
+
 export class GrilledCheese extends React.Component{
   render(){
     return(
@@ -196,42 +192,42 @@ export class PizzaBurger extends React.Component{
 export class BeefCheese extends React.Component{
   render(){
     return(
-      <CustomFood food="Beef andcheese" image={require('./images/steaksandwiches/beefcheese.jpg')} description="Beef and cheese steak sandwich"/>
+      <CustomFood food="Beef and cheese steak sandwich" image={require('./images/steaksandwiches/beefcheese.jpg')} description="Beef and cheese steak sandwich"/>
     );
   }
 }
 export class BeefPizza extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Beef and pizza steak sanwich" image={require('./images/steaksandwiches/beefpizza.jpg')} description="Beef and pizza steak sandwich i guess"/>
     );
   }
 }
 export class ChknCheese extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Chicken Cheese Steak Sandwich" image={require('./images/steaksandwiches/chickencheese.jpg')} description="Chicken Cheesesteak"/>
     );
   }
 }
 export class ChknRanch extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Chicken and Ranch Steak Sandwich" image={require('./images/steaksandwiches/chickenranch.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
 export class BuffaloBeef extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Buffalo Beef" image={require('./images/steaksandwiches/buffalobeef.jpg')} description="Buffalo Beef steak sandwich"/>
     );
   }
 }
 export class BuffaloChkn extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Buffalo Chicken" image={require('./images/steaksandwiches/buffalochicken.jpg')} description="Buffalo Chicken Steak Sandwich"/>
     );
   }
 }
@@ -239,35 +235,35 @@ export class BuffaloChkn extends React.Component{
 export class CrispyChkn extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Crispy Chicken Sandwich" image={require('./images/chickensandwiches/crispychicken.jpg')} description="The absolute crispiest chicken sandwich ever made. Enjoyed by the Norse gods."/>
     );
   }
 }
 export class ChknParm extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Chicken Parmesean" image={require('./images/chickensandwiches/chickenparm.jpg')} description="Chicken Parmesean Sammich"/>
     );
   }
 }
 export class GrilledChkn extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Grilled Chicken Sandwich" image={require('./images/chickensandwiches/grilledchicken.jpg')} description="Grilled chicken wym"/>
     );
   }
 }
 export class ChknStrips extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Chicken Strips" image={require('./images/chickensandwiches/chickenstrips.jpg')} description="Strips of chicken strips"/>
     );
   }
 }
 export class BuffaloChknStrips extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Buffalo Chicken Strips" image={require('./images/chickensandwiches/buffalostrips.jpg')} description="Like the other chicken strips, but more buffalo-y"/>
     );
   }
 }
@@ -275,28 +271,28 @@ export class BuffaloChknStrips extends React.Component{
 export class EggJay extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Egg Jay" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
 export class FrenchToast extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="French Toast" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
 export class HashBrown extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Hash Browns" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
 export class Omelet extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Omelet" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
@@ -304,28 +300,14 @@ export class Omelet extends React.Component{
 export class Personal extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Personal Pizza" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
 export class FlatBread extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
-    );
-  }
-}
-export class BuffaloChknRanch extends React.Component{
-  render(){
-    return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
-    );
-  }
-}
-export class Margarita extends React.Component{
-  render(){
-    return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Flat Bread Pizza" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
@@ -333,70 +315,71 @@ export class Margarita extends React.Component{
 export class ItalianChkn extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Italian Chicken Quesadilla" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
 export class CheeseQuesadilla extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Cheese Quesadilla" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
 export class ChknQuesadilla extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Chicken Quesadilla" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
-export class CripsyChknQuesadilla extends React.Component{
+export class CrispyChknQuesadilla extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Crispy Chicken Quesadilla" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
 export class BuffaloChknQuesadilla extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Buffalo Chicken Quesadilla" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
 export class FrenchBread extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="French Bread Quesadilla" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
+
 export class GarlicCheeseBread extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Garlic Cheese Bread" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
 export class CheesyRanch extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Cheesy Ranch" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
 export class CinnamonSticks extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Cinnamon Sticks" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
 export class BreadSticks extends React.Component{
   render(){
     return(
-      <CustomFood food="French Fries" image={require('./images/GrilledCheese.jpg')} description="Grilled cheese wym"/>
+      <CustomFood food="Breadsticks" image={require('./images/placeholder.jpg')} description="Grilled cheese wym"/>
     );
   }
 }
