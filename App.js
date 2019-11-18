@@ -3,10 +3,6 @@ import { AuthSession, Linking } from 'expo';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { openAuthSession } from 'azure-ad-graph-expo';
 
-// https://login.microsoftonline.com/1d884f12-a0d7-42f0-8b15-3a91c853bcb5/oauth2/authorize?client_id=1e034920-213a-4862-a8d7-da1bded43317&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A19006
-
-const APP_ID = '1e034920-213a-4862-a8d7-da1bded43317';
-
 export default class App extends React.Component {
   state = {
     result: null,
