@@ -3,26 +3,20 @@ import {StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
     container: {
       alignItems: 'center',
-      backgroundColor: '#062037',
+      backgroundColor: '#112D4E',
       height: '100%',
+      width: '100%',
     },
     headerText: {
-      fontSize: 30,
+      fontSize: 25,
       marginBottom: 10,
-	    justifyContent: 'center',
       color: 'white',
     },
     menuGrid: {
-      flex: 1,
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      flexWrap: 'wrap',
+
     },
     button: {
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '10%',
-      width: '30%',
+      justifyContent: 'space-between',
       borderWidth: 0,
       borderRadius: 0,
       borderColor: '#ddd',
@@ -31,11 +25,13 @@ export const styles = StyleSheet.create({
       shadowOffset: {width: 1, height: 2},
       shadowOpacity: 0.2,
       shadowRadius: 2,
-      elevation: 1,
+      elevation: 6,
       marginLeft: 5,
       marginRight: 5,
       marginTop: 10,
       marginBottom: 10,
-      backgroundColor: '#007bff',
+      backgroundColor: '#1784ea',
+      width: '100%',
+      //backgroundColor: '#062037'
     },
 });
