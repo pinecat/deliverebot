@@ -1,17 +1,34 @@
 import React from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
+import { Ionicons } from '@expo/vector-icons';
 import HomeScreen from './HomeScreen';
 import ProfileScreen from './ProfileScreen';
 
 const Nav = createMaterialBottomTabNavigator({
   Home: {
     screen: HomeScreen,
-    tabBarColor: '#123456',
+    navigationOptions: {
+      tabBarLabel:"Home",
+      tabBarIcon: ({ tintColor }) => (
+        <Ionicons name="ios-home" size={25} color="#323aa8" />
+      ),
+      tabBarOptions: {
+        showIcon: true,
+      },
+    },
   },
   Profile: {
     screen: ProfileScreen,
-    tabBarColor: '#654321',
+    navigationOptions: {
+      tabBarLabel:"Profile",
+      tabBarIcon: ({ tintColor }) => (
+        <Ionicons name="ios-body" size={25} color="#323aa8" />
+      ),
+      tabBarOptions: {
+        showIcon: true,
+      },
+    },
   },
 }, {
   initialRouteName: 'Home',
