@@ -9,6 +9,7 @@
       "android",
       "web"
     ],
+    "scheme": "ebot9",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/bluejay.png",
@@ -25,10 +26,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "edu.etown.deliverebot",
+      "bundleIdentifier": "edu.etown.deliverebot"
     },
     "android": {
-      "package": "edu.etown.deliverebot",
+      "package": "edu.etown.deliverebot"
     },
     "description": "React Native app for the fully autonomous E-Bot 9: Delver-E-Bot, at Elizabethtown College.",
     "githubUrl": "https://github.com/pinecat/deliverebot"
