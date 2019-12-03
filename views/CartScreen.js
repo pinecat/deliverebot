@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button, AsyncStorage, BackHandler } from 'react-native';
+import SocketIOClient from 'socket.io-client';
 
 let order = [];
 
@@ -12,6 +13,8 @@ class CartScreen extends React.Component {
     this.reloadCart = this.reloadCart.bind(this);
     this.clearOrder = this.clearOrder.bind(this);
     this.placeOrder = this.placeOrder.bind(this);
+
+    this.socket = SocketIOClient('http://botdev.etown.edu:3333');
   }
 
   reloadCart() {
@@ -24,7 +27,9 @@ class CartScreen extends React.Component {
   }
 
   placeOrder() {
-
+    this.socket.emit('placeOrder', order);
+    order = ['Thank you for placing your order.', 'Your food will arrive to your dorm shortly.'];
+    this.forceUpdate();
   }
 
   componentDidMount() {
@@ -42,9 +47,9 @@ class CartScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.headText}>Cart Screen</Text>
-
-        {items}
-
+        <View style={{ alightItems: 'center', justifyContent: 'center', padding: 20 }}>
+          {items}
+        </View>
         <Text>{'\n'}</Text>
         <Button title="Reload Cart" onPress={this.reloadCart} />
         <Text>{'\n'}</Text>
