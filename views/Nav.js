@@ -3,6 +3,7 @@ import { createAppContainer } from 'react-navigation';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import HomeScreen from './HomeScreen';
+import CartScreen from './CartScreen';
 import ProfileScreen from './ProfileScreen';
 
 const Nav = createMaterialBottomTabNavigator({
@@ -12,6 +13,18 @@ const Nav = createMaterialBottomTabNavigator({
       tabBarLabel:"Home",
       tabBarIcon: ({ tintColor }) => (
         <Ionicons name="ios-home" size={25} color="#323aa8" />
+      ),
+      tabBarOptions: {
+        showIcon: true,
+      },
+    },
+  },
+  Cart: {
+    screen: CartScreen,
+    navigationOptions: {
+      tabBarLabel:"Cart",
+      tabBarIcon: ({ tintColor }) => (
+        <Ionicons name="ios-cart" size={25} color="#323aa8" />
       ),
       tabBarOptions: {
         showIcon: true,
@@ -44,13 +57,13 @@ class Navigator extends React.Component {
     super(props);
     this.state = {
       user: props.user,
-      logout: props.logout,
+      logout: props.logout
     };
   }
 
   render() {
     return (
-      <NavContainer screenProps={{ user: this.state.user, logout: this.state.logout }}/>
+      <NavContainer screenProps={{ user: this.state.user, logout: this.state.logout }} />
     );
   }
 }

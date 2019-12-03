@@ -23,7 +23,7 @@ class ProfileScreen extends React.Component {
         <Text style={styles.headText}>Profile Screen</Text>
         <Text>{this.state.name}</Text>
         <Text>{this.state.info.user.mail}</Text>
-        <Text>{this.state.info.user.officeLocation}</Text>
+        <Text style={{paddingBottom: 10}}>{this.state.info.user.officeLocation}</Text>
         <Button title="Logout" onPress={this.state.info.logout} />
       </View>
     );
@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
   headText: {
     fontSize: 20,
     color: '#ffffff',
+    paddingBottom: 10,
   },
 });
 
