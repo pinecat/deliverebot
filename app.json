@@ -24,7 +24,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "edu.etown.deliverebot",
+    },
+    "android": {
+      "package": "edu.etown.deliverebot",
     },
     "description": "React Native app for the fully autonomous E-Bot 9: Delver-E-Bot, at Elizabethtown College.",
     "githubUrl": "https://github.com/pinecat/deliverebot"
